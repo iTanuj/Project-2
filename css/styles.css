@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #2d3c49;
+}
+
+.header {
+  border-top: 3px solid #02b3e4;
+  border-bottom: 3px solid #7d97ad;
+  box-shadow: 0px 2px 5px #7d97ad;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 0 0 0;
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  height: 100px;
+  padding-bottom: 4px;
+  left: 1.2em;
+}
+
+.info {
+  position: relative;
+  float: right;
+  padding-right: 2em;
+  top: .4em;
+}
+
+.my-name {
+  margin: 6px 0 0 0;
+  font-size: 250%;
+}
+
+.profession {
+ margin: 0 0 6px 0;
+ float: right;
+}
+
+.about-me {
+  width: 100%;
+  position: relative;
+  background-image: url(../img/back.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: auto;
+}
+
+.about-text {
+  width: 100%;
+  float: right;
+  color: #7d97ad;
+  text-align: center;
+}
+
+.about-text > p {
+  font-size: x-large;
+  color: #2d3c49;
+  margin-top: 30px;
+}
+
+.me {
+  position: relative;
+  top: 20px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 12px 0 rgb(0,0,0);
+  border: 5px solid white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  flex-direction: column;
+}
+
+.works {
+  font-size: x-large;
+  padding-left: 10px;
+  color: #7d97ad
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.projects > a {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #2d3c49;
+}
+
+.project {
+  width: 300px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.5);
+  border-radius: 7px;
+}
+
+.project-img {
+  width: 100%;
+  height: 11em;
+  margin-bottom: inherit;
+}
+
+.project-img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px 7px 0 0;
+}
+
+.project > h2, h6 {
+  margin: 3px 0;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    position: relative;
+    height: 75px;
+    padding-bottom: 2px;
+    left: .6em;
+  }
+
+  .info {
+    padding-right: 2em;
+    top: .2em;
+  }
+
+  .my-name {
+    margin: auto;
+    font-size: 175%;
+  }
+
+  .me {
+    height: 75px;
+  }
+
+  .about-text > p {
+    font-size: large;
+  }
+}
