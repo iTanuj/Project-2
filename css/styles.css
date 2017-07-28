@@ -128,13 +128,12 @@ body {
 
 .project-img {
   width: 100%;
-  height: 11em;
+  max-height: 11em;
   margin-bottom: inherit;
 }
 
 .project-img > img {
   width: 100%;
-  height: 100%;
   border-radius: 7px 7px 0 0;
 }
 
